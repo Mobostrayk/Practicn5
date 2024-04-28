@@ -24,17 +24,17 @@ namespace ViewModel
                 OnPropertyChanged("NewExam");
             }
         }
-        private Exam _selectedEmployee;
-        public Exam SelectedEmployee
+        private Exam _selectedExam;
+        public Exam SelectedExam
         {
             get
             {
-                return _selectedEmployee;
+                return _selectedExam;
             }
             set
             {
-                _selectedEmployee = value;
-                OnPropertyChanged("SelectedEmployee");
+                _selectedExam = value;
+                OnPropertyChanged("SelectedExam");
             }
         }
 
@@ -78,11 +78,11 @@ namespace ViewModel
 
         public void RemoveEmployee()
         {
-            if (_selectedEmployee != null)
+            if (_selectedExam != null)
             {
-                if (Exams.Contains(SelectedEmployee))
+                if (Exams.Contains(SelectedExam))
                 {
-                    Exams.Remove(SelectedEmployee); 
+                    Exams.Remove(SelectedExam); 
                 }
             }
         }

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="ExamNote" Height="720" Width="1280" WindowStyle="ThreeDBorderWindow">
     <Grid x:Name="Grid" Background="Gray">
-        <ListView SelectedItem="{Binding SelectedEmployee}" x:Name="examslist" ItemsSource="{Binding Exams}" Margin="547,10,10,10" Background="Gray" FontSize="16">
+        <ListView SelectedItem="{Binding SelectedExam}" x:Name="examslist" ItemsSource="{Binding Exams}" Margin="547,10,10,10" Background="Gray" FontSize="16">
             <ListView.View>
 
                 <GridView>
